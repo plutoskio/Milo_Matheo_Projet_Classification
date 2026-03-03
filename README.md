@@ -1,8 +1,8 @@
-# 🏦 Credit Card Default Prediction — Classification Models
+# Credit Card Default Prediction — Classification Models
 
 A machine learning classification project predicting whether credit card clients will **default on their next monthly payment**, enabling automated risk-tiering and proactive loss prevention.
 
-## 📋 Project Overview
+## Project Overview
 
 | Item | Detail |
 |------|--------|
@@ -12,7 +12,7 @@ A machine learning classification project predicting whether credit card clients
 | **Models** | Logistic Regression, Decision Tree, Random Forest, AdaBoost, Gradient Boosting, SVM |
 | **Recommended Model** | Gradient Boosting Classifier |
 
-## 💼 Business Value
+## Business Value
 
 A Taiwanese consumer bank needs to identify which of its ~30,000 credit card clients will default next month. The cost asymmetry is extreme:
 
@@ -21,7 +21,7 @@ A Taiwanese consumer bank needs to identify which of its ~30,000 credit card cli
 
 The model automates risk-tiering, reducing both missed defaults and unnecessary manual reviews — directly improving **operational efficiency** and **P&L**.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Python 3.10+
@@ -51,7 +51,7 @@ source venv/bin/activate
 jupyter nbconvert --to notebook --execute credit_default_classification.ipynb --output executed_notebook.ipynb
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 project_ML_claude/
@@ -63,7 +63,7 @@ project_ML_claude/
 └── venv/                                 # Virtual environment
 ```
 
-## 📊 Key Results
+## Key Results
 
 ### Model Comparison
 
@@ -93,7 +93,7 @@ Each model's confusion matrix was translated into **dollar costs**:
 4. **LIMIT_BAL** — Credit limit amount
 5. **AVG_PAY_RATIO** — Bill payment coverage ratio
 
-## 📚 Dataset Source
+## Dataset Source
 
 **UCI Machine Learning Repository**: [Default of Credit Card Clients Dataset](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
 
@@ -104,7 +104,7 @@ Each model's confusion matrix was translated into **dollar costs**:
 
 The raw data is saved locally as `data/credit_default.csv` — **no API keys required** to run the notebook.
 
-## 🛠 Technical Highlights
+## Technical Highlights
 
 - **No Data Leakage**: Scaling fitted only on training folds; stratified splits preserve class balance
 - **Outlier Treatment**: IQR capping on financial amounts (heavy-tailed distributions)
