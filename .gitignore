@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+
+# Data (Optional: if the data is too large, it should be ignored, but I'll leave it for now unless I see it's huge)
+# data/
